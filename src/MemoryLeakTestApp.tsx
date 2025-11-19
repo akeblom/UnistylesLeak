@@ -4,8 +4,8 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StyleSheet } from 'react-native-unistyles';
 import '@styles/passepartout/unistyles';
-// import { MemoryLeakTest } from './screens/MemoryLeakTest';
 import { MemoryLeakTestAdvanced } from './screens/MemoryLeakTestAdvanced';
+// import { MemoryLeakTestAdvancedWithoutUseVariant } from './screens/MemoryLeakTestAdvancedWithoutUseVariant';
 
 /**
  * Minimal app wrapper for testing memory leaks with Unistyles.
@@ -22,6 +22,7 @@ const MemoryLeakTestApp = () => {
             backgroundColor="transparent"
           />
           <MemoryLeakTestAdvanced />
+          {/* <MemoryLeakTestAdvancedWithoutUseVariant /> */}
         </SafeAreaView>
       </SafeAreaProvider>
     </GestureHandlerRootView>
