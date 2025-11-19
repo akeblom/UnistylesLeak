@@ -1,5 +1,26 @@
 {
   "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@redux/*": ["src/redux/*"],
+      "@assets/*": ["assets/*"],
+      "@graphql/*": ["src/graphql/*"],
+      "@context/*": ["src/context/*"],
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@types/*": ["src/types/*"],
+      "@enums/*": ["src/enums/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@modules/*": ["src/modules/*"],
+      "@navigation/*": ["src/modules/navigation/*"],
+      "@locale/*": ["src/locale/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@auth/*": ["src/modules/authentication/*"]
+    }
+  },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["**/node_modules", "**/Pods"]
 }
